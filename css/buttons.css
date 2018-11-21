@@ -1,47 +1,24 @@
 .text-container {
-    border: solid 1px rgba(0, 0, 0, 1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
+    border: solid 1px black;
     border-radius: 5px;
 }
 
-.text-container::before {
-    content: '';
+.text-modal {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0%;
-    height: 100%;
-    background-color: pink;
+    width: 100%;
+    height: 200px;
+    top: 100%;
+    left: 0;
+    border: solid 1px blue;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     opacity: 0;
-    z-index: -1;
-}
-
-.text-container:hover::before {
-    opacity: 1;
-    animation: button-animation 0.3s ease both;
-}
-
-.edit-button {
-    margin: 15px;
-    height: 50%;
-    opacity: 0;
-    transition: opacity ease 0.3s;
-}
-
-.edit-button:hover {
-    opacity: 1;
-}
-
-@keyframes button-animation {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        width: 75px;
-     }
 }

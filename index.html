@@ -9,10 +9,25 @@
 </head>
 <body>
     
-    <h1>Test Button Animations</h1>
+    <h1 class="title">Test Button Animations</h1>
     <div class="text-container">
-        <h3>Some Text</h3>
+        <h3 id="inline-edit">Some Text</h3>
         <button class="edit-button">edit</button>
+        <div class="text-modal">
+            <div class="modal-header">
+                <h2>Enter some new text</h2>
+            </div>
+            <div class="modal-body">
+                <input id="user-input" type="text">
+            </div>
+            <div class="modal-actions">
+                <button id="accept-button" type="button">Accept</button>
+                <button id="decline-button" type="button">Decline</button>
+            </div>
+        </div>
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
